@@ -4,6 +4,8 @@ const nextConfig = {
   // Ensure static exports if you want pure offline HTML fallback capability
   /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+distDir: 'dist',
   reactStrictMode: true,
   output: 'export', // ← UNCOMMENT THIS LINE
   async headers() {
