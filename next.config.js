@@ -2,7 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   // Ensure static exports if you want pure offline HTML fallback capability
-  // output: 'export', // Uncomment if deploying to static hosting only. Vercel handles hybrid well.
+  /** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  output: 'export', // ← UNCOMMENT THIS LINE
   async headers() {
     return [
       {
